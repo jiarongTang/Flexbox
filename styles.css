@@ -3,3 +3,63 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+header{
+    background-color: white;
+    padding: 10px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+header > nav {
+    flex-grow: 1;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.nav-list{
+    align-items:center;
+    width: 80%;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    display: none;
+    height: 30px;
+    width: 30px;
+}
+
+main{
+    background-color: bisque;
+}
+
+aside{
+    background-color: aquamarine;
+}
+
+section{
+    background-color: pink;
+}
+
+footer{
+    background-color: plum;
+}
+
+@media (max-width: 500px) {
+    .nav-list {
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+    
+}
