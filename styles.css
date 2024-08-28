@@ -43,6 +43,7 @@ main{
     position: relative;
     top: 50px;
     padding: 20px;
+    margin-bottom: 150px;
     z-index: 0;
     height: 500px;
     display: flex;
@@ -92,6 +93,7 @@ aside{
     z-index: 0;
     top: 50px;
     padding: 10px;
+    margin-bottom: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,10 +131,50 @@ aside > p {
 
 section{
     background-color: pink;
+    position: relative;
+    top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.opiniones {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.opiniones > li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.opinion {
+    width: 250px;
+}
+
+.opinion > figure > img {
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+}
+
+.opinion > figure > figcaption {
+    font-weight: bolder;
 }
 
 footer{
     background-color: plum;
+
 }
 
 @media (max-width: 500px) {
@@ -144,7 +186,11 @@ footer{
         display: block;
     }
 
-    .info > h1 {
+    header > h1 {
+        font-size: 30px;
+    }
+
+    .info > h2 {
         font-size: 30px;
     }
     .info {
@@ -161,5 +207,22 @@ footer{
 
     aside > p {
         font-size: 10px;
+    }
+
+    section {
+        position: relative;
+        top: 150px;
+    }
+
+    section > h2 {
+        font-size: 20px;
+    }
+
+    .opinion > figure > figcaption {
+        font-size: 0.8rem;
+    }
+
+    .opinion > p {
+        font-size: 0.8rem;
     }
 }
